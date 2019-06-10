@@ -121,6 +121,7 @@ var (
 	LayerTypeNTP                         = gopacket.RegisterLayerType(117, gopacket.LayerTypeMetadata{Name: "NTP", Decoder: gopacket.DecodeFunc(decodeNTP)})
 	LayerTypeDHCPv4                      = gopacket.RegisterLayerType(118, gopacket.LayerTypeMetadata{Name: "DHCPv4", Decoder: gopacket.DecodeFunc(decodeDHCPv4)})
 	LayerTypeVRRP                        = gopacket.RegisterLayerType(119, gopacket.LayerTypeMetadata{Name: "VRRP", Decoder: gopacket.DecodeFunc(decodeVRRP)})
+	LayerTypeERSPANII                    = gopacket.RegisterLayerType(2001, gopacket.LayerTypeMetadata{Name: "ERSPANIIHeader", Decoder: gopacket.DecodeFunc(decodeERSPANII)})
 )
 
 var (
